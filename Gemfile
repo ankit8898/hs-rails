@@ -1,10 +1,16 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+
+ruby '2.0.0'
 gem 'rails', '4.0.1'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sqlite3'
+end
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -28,6 +34,11 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+
+group :production do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'pg'
+end
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
