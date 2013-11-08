@@ -1,5 +1,5 @@
 PATH
-  remote: vendor/gems/highstocks-rails
+  remote: vendor/gems/highstocks-rails-0.0.1
   specs:
     highstocks-rails (0.0.1)
       railties (>= 3.1)
