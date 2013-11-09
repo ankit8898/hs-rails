@@ -15,6 +15,7 @@
 //= require foundation
 //= require turbolinks
 //= require highstocks
+//= require highstocks/modules/exporting
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
